@@ -1,0 +1,16 @@
+name: BkrTorchLight
+main: ykt.BeYkeRYkt.BkrTorchLight.BTL
+version: 2.6Beta
+description: >
+             Portable Torch + Server - side!
+author: BeYkeRYkt
+commands:
+  btl:
+    aliases: bkrtorchlight
+    description: use torch
+    usage: /<command> [args]
+    permission: btl.use
+permissions:
+    BTL.update:
+        description: Update plugin
+        default: op
