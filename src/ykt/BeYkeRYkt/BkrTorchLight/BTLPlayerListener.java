@@ -47,6 +47,13 @@ public BTLPlayerListener(BTL instance)
 }
 
 @EventHandler
+public void onPlayerDeath(PlayerDeathEvent event) {
+Player player = event.getEntity();
+			plugin.deleteLightSource(player);
+    }
+
+
+@EventHandler
 public void onPlayerTeleport(PlayerTeleportEvent event) {
 Player player = event.getPlayer();
 			plugin.deleteLightSource(player);
