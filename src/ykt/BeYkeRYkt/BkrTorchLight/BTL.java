@@ -162,7 +162,7 @@ public void onEnable()
 			    CraftWorld cWorld = (CraftWorld)player.getWorld();
 		for (Chunk c : getChunks(p)) {
 			((CraftChunk)c).getHandle().initLighting();
-			((CraftPlayer) player).getHandle().chunkCoordIntPairQueue.add(new ChunkCoordIntPair(c.getX(), c.getZ()));
+			((CraftPlayer) p).getHandle().chunkCoordIntPairQueue.add(new ChunkCoordIntPair(c.getX(), c.getZ()));
 				}
 		 }	
 	}
