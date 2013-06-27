@@ -90,17 +90,6 @@ public void onItemHeldChange(PlayerItemHeldEvent event)
 	}}
 
 @EventHandler
-public void onEntityDamageByEntity (EntityDamageByEntityEvent event) {
-	if ( event.getDamager() instanceof Player) {
-		  Player player = (Player) event.getDamager();
-		if (this.plugin.isUsing.contains(player)) {
-			event.setCancelled(false);
-		}
-	}
-	}
-
-
-@EventHandler
 public void onPlayerMove(PlayerMoveEvent event)
 {
   Player player = event.getPlayer();
